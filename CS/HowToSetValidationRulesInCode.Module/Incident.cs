@@ -31,7 +31,7 @@ namespace HowToSetValidationRulesInCode.Module {
 				return assignedTo;
 			}
 			set {
-				SetPropertyValue("AssignedTo ", ref assignedTo, value);
+				SetPropertyValue("AssignedTo", ref assignedTo, value);
 			}
 		}
 	}
