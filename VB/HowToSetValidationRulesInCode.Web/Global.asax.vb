@@ -16,7 +16,8 @@ Namespace HowToSetValidationRulesInCode.Web
         End Sub
         Protected Sub Application_Start(ByVal sender As Object, ByVal e As EventArgs)
 
-        End Sub
+                    DevExpress.ExpressApp.FrameworkSettings.DefaultSettingsCompatibilityMode = DevExpress.ExpressApp.FrameworkSettingsCompatibilityMode.v20_1
+End Sub
         Protected Sub Session_Start(ByVal sender As Object, ByVal e As EventArgs)
             WebApplication.SetInstance(Session, New HowToSetValidationRulesInCodeAspNetApplication())
             DevExpress.ExpressApp.Xpo.InMemoryDataStoreProvider.Register()
